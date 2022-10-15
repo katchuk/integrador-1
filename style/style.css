@@ -16,6 +16,7 @@
 }
 
 body {
+    background: url(/imagen/0da9152172311a50c3f896a258322e10.jpg);
     width: 100vw;
     max-width: 100%;
     font-family: "Poppins", sans-serif;
@@ -88,7 +89,7 @@ input{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 4px;
+        gap: 10px;
     }
 
     ul li {
@@ -114,7 +115,7 @@ input{
     label > div {
         height: 4px;
         width: 35px;
-        background: white;
+        background: black;
         margin: 6px;
     }
 
@@ -123,7 +124,7 @@ input{
     }
 
     #toggle-nav:checked ~ .nav {
-        height: 100vh;
+        height: 50vh;
         width: 300px;
         background: white;
         z-index: 1;
@@ -175,14 +176,16 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: grey;
-    color: white;
-    padding: 8rem 0;
-    gap: 50px;
+    background: #ecdada;
+    color: black;
+    gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
   
 .contacto-footer {
-    font-size: 2rem;
+    font-size: 20px;
 }
   
 .info-container {
@@ -190,7 +193,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 80px;
+    gap: 20px;
 }
   
   .contacto p {
@@ -245,41 +248,38 @@ footer {
 .twitter:hover{
     background: #1da1f2;
 }
-  .facebook:hover{
+.facebook:hover{
     background: #4267B2;
 }
 .instagram:hover{
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 }
-  
+
 @media (min-width: 320px) and (max-width: 768px) {
-   footer {
-        height: 100%;
-    }
-  
+
     .info-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
-  
+
     .contacto-footer {
-      font-size: auto;
+        font-size: auto;
     }
-  
+
     .contacto h3 {
-      font-size: auto;
+        font-size: auto;
     }
-  
+
     .icons {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
     }
-}
+    }
   /* Fin del footer */

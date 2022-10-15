@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&family=Poppins:ital,wght@0,300;0,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: "Poppins", sans-serif;
+    --color-boton: #E12D72;
+    --lila: #d7def3;
+}
+
+body {
+    background: url("/imagen/0da9152172311a50c3f896a258322e10.jpg");
+    font-family: var(--font);
+    border-radius: 0 20px 20px 0;
+    font-family: var(--font);
+    color: rgb(20, 14, 14);
+}
+
+a, p{
+    font-size: 12px;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login_container {
+    background: #ecdada;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    border-radius: 25px;
+    min-height: 200px;
+    max-height: 300px;
+    height: 60%;
+}
+
+.register_container {
+    background: #ecdada;
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    width: 50%;
+    border-radius: 25px;
+    min-height: 250px;
+    max-height: 800px;
+    height: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 75%;
+}
+
+form label {
+    padding-bottom: 10px;
+}
+
+form input {
+    margin-bottom: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn {
+    background: var(--color-boton);
+    color: argb(20, 14, 14);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #26867d;
+}
+
+.login-img {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .register_container {
+        max-width: 1500px;
+        width: 70%;
+        border-radius: 25px;
+        min-height: 200px;
+        max-height: 800px;
+        height: 70%;
+    }
+
+    .login-img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("/imagen/Logo Abuela Greys.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0 20px 20px 0;
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+}
